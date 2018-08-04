@@ -16,8 +16,12 @@ The usage is simple, when you run it, it should all be quite intuitive, but ther
 
 All utilities here use __ffmpeg__ , a wonderful free library for dealing with videos. 
 
+## The easy way
+
 The easiest way to do this is to download entire folder with everything already setup from [here for 64 bit windows](https://mega.nz/#!iCAw3KrA!FUajA1wVxBrn7q5lDfJkYMq7wSw7LIb0yxtwd2D7XoA) and [here for 32 bit windows](https://mega.nz/#!aaRAQKzZ!QKuh-gRQYh8zWeHuW38WRA-pxWCdRCgfsU7DaLXtrVo). If you are not sure which, try 64 bit first. Once downloaded, unzip the file and you will see the three tools in the new folder called twittermedia, just double click on them to start them.
-For this you need to trust us, which may be difficult and we take no offence in that.
+For this you need to trust us, which may be difficult and we take no offence in that. If it helps, the folder contains all the same things you would have if you followed the hard way instructions.
+
+## The hard way
 
 To install things manually:
 
