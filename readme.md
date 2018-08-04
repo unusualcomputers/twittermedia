@@ -2,7 +2,7 @@
 
 Windows utilities used to create twitter friendly videos. 
 
-__gifkoPro__ takes as input an existing video (something you made or downloaded, mayeb from youtube or wherever) and creates a short snippet of it (you choose from and to values) in a format that works nicely with twitter. mp4 version will have sound in it, gif will not.
+__gifkoPro__ takes as input an existing video (something you made or downloaded, maybe from youtube or wherever) and creates a short snippet of it (you choose from and to values) in a format that works nicely with twitter. mp4 version will have sound in it, gif will not.
 
 __subsYeahPro__ takes as input a video and an .srt subtitles file and hardcodes the subtitles into the video so that it's only one file, suitable for uploading to social networks.
 
@@ -12,7 +12,7 @@ __fshlbPro__ takes as input a picture (ideally a png file in one of the sizes me
 It is somewhat configurable and you can save configurations for later use, the most common ones are already supplied (for the three common file sizes).
 The usage is simple, when you run it, it should all be quite intuitive, but there are explanations in tooltips, just hover mouse over fields on the screen.
 
-#Installation
+# Installation
 
 All utilities here use __ffmpeg__ , a wonderful free library for dealing with videos. 
 
@@ -31,7 +31,7 @@ To install things manually:
     * Your new folder should contain all the files you got from us at the top level (not in another subfolder). Move them if you need to.
     * Your new folder should contain a subfolder ffmpeg which should contain subfolder 'bin'. This structure is important, won't work otherwise, move things if you need to.
 
-#How to use
+# How to use
 
 Most things are going to be quite obvious, but every field has tooltips, float your mouse over everything and read these, it really helps. One thing that is often confusing is how to input start and end times for things - follow the tooltip and try it out a bit if things don't work. Error messages are quite rubbish, but is things fail this is the first thing to try.
 
