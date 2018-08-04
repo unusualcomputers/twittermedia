@@ -2,20 +2,21 @@
 
 Windows utilities used to create twitter friendly videos. 
 
-__fshlbPro__ takes as input a picture (ideally a png file in one of the above sizes) and an audio file and combines them into an mp4 video suitable to upload to twitter with the picutre in the background and audio visualisation in the foreground.
+__gifkoPro__ takes as input an existing video (something you made or downloaded, mayeb from youtube or wherever) and creates a short snippet of it (you choose from and to values) in a format that works nicely with twitter. mp4 version will have sound in it, gif will not.
+
+__subsYeahPro__ takes as input a video and an .srt subtitles file and hardcodes the subtitles into the video so that it's only one file, suitable for uploading to social networks.
+
+
+__fshlbPro__ takes as input a picture (ideally a png file in one of the sizes mentioned below) and an audio file and combines them into an mp4 video suitable to upload to twitter with the picutre in the background and audio visualisation in the foreground.
 
 It is somewhat configurable and you can save configurations for later use, the most common ones are already supplied (for the three common file sizes).
 The usage is simple, when you run it, it should all be quite intuitive, but there are explanations in tooltips, just hover mouse over fields on the screen.
-
-__gifkoPro__ takes as input an existing video (something you made or downloaded, mayeb from youtube or wherever) and creates a short snippet of it (you choose from and to values) in a format that works nicely with twitter.
-
-__subsYeahPro__ takes as input a video and an .srt subtitles file and hardcodes the subtitles into the video so that it's only one file, suitable for uploading to social networks.
 
 #Installation
 
 All utilities here use __ffmpeg__ , a wonderful free library for dealing with videos. 
 
-The easiest way to do this is to download entire folder with everything already setup from [here for 64 bit windows]() and [here for 32 bit windows](). If you are not sure which, try 64 bit first. Once downloaded, unzip the file and you will see the three tools in the new folder called twittermedia.
+The easiest way to do this is to download entire folder with everything already setup from [here for 64 bit windows](https://mega.nz/#!iCAw3KrA!FUajA1wVxBrn7q5lDfJkYMq7wSw7LIb0yxtwd2D7XoA) and [here for 32 bit windows](https://mega.nz/#!aaRAQKzZ!QKuh-gRQYh8zWeHuW38WRA-pxWCdRCgfsU7DaLXtrVo). If you are not sure which, try 64 bit first. Once downloaded, unzip the file and you will see the three tools in the new folder called twittermedia, just double click on them to start them.
 For this you need to trust us, which may be difficult and we take no offence in that.
 
 To install things manually:
@@ -32,7 +33,7 @@ To install things manually:
 
 #How to use
 
-Most things are going to be quite obvious, but every field has tooltips, float your mouse over everythign and read these, it really helps. One thing that is often confusing is how to input start and end times for things - follow the tooltip and try it out a bit if things don't work. Error messages are quite rubbish, but is things fail this is the first thing to try.
+Most things are going to be quite obvious, but every field has tooltips, float your mouse over everything and read these, it really helps. One thing that is often confusing is how to input start and end times for things - follow the tooltip and try it out a bit if things don't work. Error messages are quite rubbish, but is things fail this is the first thing to try.
 
 To add subtitles to your video you will need an srt file with subtitles in it. There are very nice free tools to download to do this, google them. For short films you can easily create these files manually without any additional software, there is a nice guide [here](https://www.3playmedia.com/2017/03/08/create-srt-file/) or google something like 'how to create srt files manually'. It is really, really easy once you try it. 
 
