@@ -18,7 +18,7 @@ All utilities here use __ffmpeg__ , a wonderful free library for dealing with vi
 
 ## The easy way
 
-The easiest way to do this is to download entire folder with everything already setup from [here for 64 bit windows](https://mega.nz/#!iCAw3KrA!FUajA1wVxBrn7q5lDfJkYMq7wSw7LIb0yxtwd2D7XoA) and [here for 32 bit windows](https://mega.nz/#!aaRAQKzZ!QKuh-gRQYh8zWeHuW38WRA-pxWCdRCgfsU7DaLXtrVo). If you are not sure which, try 64 bit first. Once downloaded, unzip the file and you will see the three tools in the new folder called twittermedia, just double click on them to start them.
+The easiest way to do this is to download entire folder with everything already setup from [here for 64 bit windows](https://mega.nz/#!yPpiBYKR!J3od6zwqdKg47B3Jm6VQQA7PSQYqWBwawtxh-VZ_Tf4) and [here for 32 bit windows](https://mega.nz/#!iOw1EKaZ!QdchZ1CjjQPzxNKH7FAfzCPD7RRNadzKihyrzyxN-aI). If you are not sure which, try 64 bit first. Once downloaded, unzip the file and you will see the three tools in the new folder called twittermedia, just double click on them to start them.
 For this you need to trust us, which may be difficult and we take no offence in that. If it helps, the folder contains all the same things you would have if you followed the hard way instructions.
 
 ## The hard way
