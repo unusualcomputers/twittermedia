@@ -60,7 +60,15 @@ Function CreateCommand
 	yv = Trim(Y.value)
 	wv = Trim(W.value)
 	hv = Trim(H.value)
-	command = "ffmpeg\bin\ffmpeg -i """ & sound.value & """ -loop 1 -i """ & picture.value & """ -filter_complex ""[0:a]showwaves=s=" & wv & "x"& hv & ":mode=" & mode.value & ":colors=" & lcolor.value & "|" & rcolor.value & ",format=rgba,colorkey=black:similarity=0.5[sw];[1:v][sw]overlay=shortest=1:x=" & xv & ":y=" & yv & ",format=yuv420p[out]"" -map ""[out]"" -map 0:a -b:v 1M -c:v libx264 -preset fast -strict -2 " & output.value
+    sss=sound.value
+    sss=replace(sss,"\","\\")
+    sss=replace(sss,":","\:")
+    sss=replace(sss,"\","\\")
+    ppp=picture.value
+    ppp=replace(ppp,"\","\\")
+    ppp=replace(ppp,":","\:")
+    ppp=replace(ppp,"\","\\")
+	command = "ffmpeg\bin\ffmpeg -i """ & sss & """ -loop 1 -i """ & ppp & """ -filter_complex ""[0:a]showwaves=s=" & wv & "x"& hv & ":mode=" & mode.value & ":colors=" & lcolor.value & "|" & rcolor.value & ",format=rgba,colorkey=black:similarity=0.5[sw];[1:v][sw]overlay=shortest=1:x=" & xv & ":y=" & yv & ",format=yuv420p[out]"" -map ""[out]"" -map 0:a -b:v 1M -c:v libx264 -preset fast -strict -2 " & output.value
 
 	CreateCommand = command
 End Function

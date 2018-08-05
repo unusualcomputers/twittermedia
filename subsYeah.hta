@@ -54,8 +54,13 @@ Sub OnClickButtonButton1()
 	s=replace(s,"\","\\")
 	s=replace(s,":","\:")
 	s=replace(s,"\","\\")
+    fff=film.value
+	fff=replace(fff,"\","\\")
+	fff=replace(fff,":","\:")
+	fff=replace(fff,"\","\\")
+
 	f=fontsize.value
-	command = "ffmpeg\bin\ffmpeg -i " & film.value & " -vf subtitles=""" & s & """:force_style='Fontsize=" & f & "' " & output.value
+	command = "ffmpeg\bin\ffmpeg -i """ & fff & """ -vf subtitles=""" & s & """:force_style='Fontsize=" & f & "' " & output.value
 	CommandLine.value = command
 	Set obj = CreateObject("WScript.Shell")
 	obj.Run command

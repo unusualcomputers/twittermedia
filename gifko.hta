@@ -50,7 +50,11 @@ End Sub
 
 Function BuildMp4Command()
 	
-		command = "ffmpeg\bin\ffmpeg -i " &  film.value & " -ss " & from.value 
+        fff=film.value
+        fff=replace(fff,"\","\\")
+        fff=replace(fff,":","\:")
+        fff=replace(fff,"\","\\")
+		command = "ffmpeg\bin\ffmpeg -i """ & fff  & """ -ss " & from.value 
 		
 		if duration.value <> "0.000" then
 			command = command & " -to " & duration.value
@@ -78,10 +82,14 @@ Sub OnClickButtonButton1()
 		scaleWidth = scale.value
 	End If
 
+    fff=film.value
+    fff=replace(fff,"\","\\")
+    fff=replace(fff,":","\:")
+    fff=replace(fff,"\","\\")
 	If Right(output.value,3) = "gif" Then
-		command1 = "ffmpeg\bin\ffmpeg -y -ss " & from.value & " -t " & duration.value & " -i " & film.value & " -vf fps=" & fps.value & ",scale=" & scaleWidth & ":-1:flags=lanczos,palettegen  palette.png"
+		command1 = "ffmpeg\bin\ffmpeg -y -ss " & from.value & " -t " & duration.value & " -i """ & fff & """ -vf fps=" & fps.value & ",scale=" & scaleWidth & ":-1:flags=lanczos,palettegen  palette.png"
 		objR.Run command1
-		command2 = "ffmpeg\bin\ffmpeg -ss " & from.value & " -t " & duration.value & " -i " & film.value & " -i palette.png -filter_complex ""fps=" & fps.value & ",scale=" & scaleWidth &":-1:flags=lanczos[x];[x][1:v]paletteuse"" " & output.value
+		command2 = "ffmpeg\bin\ffmpeg -ss " & from.value & " -t " & duration.value & " -i """ & fff & """ -i palette.png -filter_complex ""fps=" & fps.value & ",scale=" & scaleWidth &":-1:flags=lanczos[x];[x][1:v]paletteuse"" " & output.value
 		objR.Run command2
 		Set objF = CreateObject("Scripting.FileSystemObject")
 		'objF.DeleteFile("palette.png")
